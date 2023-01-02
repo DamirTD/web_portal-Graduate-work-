@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul,li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.margin {
+    margin-left: -300px;
+    margin-right: -300px;
+}
+
+.hero {
+    width: 1920px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: #ffefd5;*/
+    background: url("../assets/shop_img/background/image.png") no-repeat;
+}
+
+.header {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 175px;
+    gap: 30px;
+}
+
+.menu_link a {
+    padding: 5px 20px;
+    color: #4f4f4f;
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    transition: .25s;
+    font-family: 'ABeeZee-Regular' !important;
+}
+
+li::after {
+    content: '.........................................';
+    display: block;
+    color: #a8967e;
+    letter-spacing: 1px;
+    margin: 0px 0 10px !important;
+}
+
+.menu_link a:hover {
+    color: white;
+    background-color: #E1C9A9;
+}
+
+.shop_now-button {
+    margin-top: 200px;
+    margin-left: 560px;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 700;
+    border: 1px solid white;
+    background-color: #eec5ba;
+}
+
+.shop_now-button:hover {
+    background-color: white;
+    color: #eec5ba;
+}
+
+/* Apparel */
+
+.apparel_section {
+    margin-top: 125px;
+}

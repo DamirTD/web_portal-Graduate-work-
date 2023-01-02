@@ -1,0 +1,23 @@
+
+products :
+
+    apparel :
+
+        1) title: anime print hoodie. price: 16.99$
+        2) title: anime print hoodie. price: 12.99$
+        3) title: anime print hoodie. price: 21.99$
+
+        4) title: anime T-shirt. price: 8.79$;
+
+        5) title: anime collection. price: 39.99$;
+
+        6) title: anime pants. price: 11.99$;
+        7) title: anime pants. price: 11.99$;
+
+    accessories :
+
+        1) title: anime toy. price: 10.99$
+
+        2) title: anime watter bottle. price: 19.99$
+
+        3) title: anime socks. price: 6.99$
