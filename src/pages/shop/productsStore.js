@@ -49,15 +49,18 @@ const productsArray = [
     },
     {
         id: "7",
-        title: "anime toy",
+        title: "anime print hoodie",
         price: 10.99,
-        img: image8,
+        img: image1,
     },
+]
+
+const productAccessories = [
     {
         id: "8",
-        title: "anime print hoodie",
+        title: "anime toy",
         price: 21.99,
-        img: image1,
+        img: image8,
     },
     {
         id: "9",
@@ -84,4 +87,15 @@ function getProductData(id) {
     return productData;
 }
 
-export { productsArray, getProductData };
+function getProductAccessoriesData(id) {
+    let productAccessoriesData = productAccessories.find(product => product.id === id);
+
+    if (productAccessories === undefined) {
+        console.log("Product data does not exist for ID: " + id);
+        return  undefined;
+    }
+
+    return productAccessoriesData;
+}
+
+export { productAccessories ,productsArray, getProductData, getProductAccessoriesData };

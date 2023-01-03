@@ -3,10 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Row, Col } from "react-bootstrap";
 import Container from 'react-bootstrap/Container';
 import {productsArray} from "./shop/productsStore";
+import {productAccessories} from './shop/productsStore';
 import ProductCard from "../components/shop/ProductCard";
 import './Shop.css';
 
 const Shop = () => {
+
     return (
         <>
             <div className={'shop'}>
@@ -47,12 +49,31 @@ const Shop = () => {
                                 )
                             )}
                         </Row>
+                        <button className={'view_all_button'}>VIEW ALL</button>
                     </Container>
+                </section>
+
+                <section className={'accessories_section'}>
+                    <Container>
+                        <h1 align={'center'} className={' p-3 accessories-h1'}>ACCESSORIES</h1>
+                        <Row xs={1} md={3} className={'g-4'}>
+                            {productAccessories.map(
+                                (product, idx) => (
+                                    <Col align={'center'} key={idx}>
+                                        <ProductCard product={product} />
+                                    </Col>
+                                )
+                            )}
+                        </Row>
+                    </Container>
+                    <button className={'view_all_button'}>VIEW ALL</button>
                 </section>
 
             </div>
         </>
     );
 };
+
+
 
 export default Shop;

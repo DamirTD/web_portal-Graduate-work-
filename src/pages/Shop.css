@@ -67,6 +67,7 @@ li::after {
 .menu_link a:hover {
     color: white;
     background-color: #E1C9A9;
+    text-decoration: none;
 }
 
 .shop_now-button {
@@ -83,6 +84,7 @@ li::after {
 .shop_now-button:hover {
     background-color: white;
     color: #eec5ba;
+
 }
 
 /* Apparel */
@@ -90,3 +92,49 @@ li::after {
 .apparel_section {
     margin-top: 125px;
 }
+
+.p-3 {
+    font-weight: 900;
+    letter-spacing: -2px;
+    color: #eec5ba;
+    font-family: 'ABeeZee-Regular';
+}
+
+.view_all_button {
+    background: #eec5ba;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'ABeeZee-Regular';
+    border: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    margin-left: 560px;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: white;
+}
+
+.view_all_button:hover {
+    border: 1px solid #eec5ba;
+    color: #eec5ba;
+    background-color: white;
+}
+
+/* Accessories */
+
+.accessories_section {
+    margin-top: 75px;
+}
+
+.accessories-h1 {
+    font-weight: 900;
+    letter-spacing: -2px;
+    color: #eec5ba;
+    font-family: 'ABeeZee-Regular';
+}
+
+
+
+

@@ -16,15 +16,17 @@ function NavbarComponent() {
     return (
         <>
             <Container>
-                <Navbar expand="sm">
-                    <Button className={'justify-content-start'} variant="outline-danger" onClick={handleShow}>
-                        Launch
-                    </Button>
-                    <Navbar.Collapse className={'justify-content-center'}>
-                        <Navbar.Brand className={'logo-holder logo-4'} href="/"> <h3>RIO</h3> <p>commercial Store</p></Navbar.Brand>
-                    </Navbar.Collapse>
-                    <Navbar.Toggle/>
+                <Navbar expand="sm" >
+                    <Container>
+                        <Button className={'justify-content-start'} variant="outline-danger" onClick={handleShow}>
+                            Launch
+                        </Button>
+                        <Navbar.Collapse className={'justify-content-center'}>
+                            <Navbar.Brand className={'logo-holder logo-4'} href="/"> <h3>RIO</h3> <p>commercial Store</p></Navbar.Brand>
+                        </Navbar.Collapse>
+                        <Navbar.Toggle/>
                         <Button variant="outline-danger" onClick={handleShow}>Cart ({productsCount} Items)</Button>
+                    </Container>
                 </Navbar>
             </Container>
             <Modal show={show} onHide={handleClose}>
