@@ -87,9 +87,9 @@ li::after {
 
 }
 
-/* Apparel */
+/* SHOP */
 
-.apparel_section {
+.shop_section {
     margin-top: 125px;
 }
 
@@ -120,19 +120,6 @@ li::after {
     border: 1px solid #eec5ba;
     color: #eec5ba;
     background-color: white;
-}
-
-/* Accessories */
-
-.accessories_section {
-    margin-top: 75px;
-}
-
-.accessories-h1 {
-    font-weight: 900;
-    letter-spacing: -2px;
-    color: #eec5ba;
-    font-family: 'ABeeZee-Regular';
 }
 
 

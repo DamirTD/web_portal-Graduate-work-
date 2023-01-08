@@ -3,9 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Row, Col } from "react-bootstrap";
 import Container from 'react-bootstrap/Container';
 import {productsArray} from "./shop/productsStore";
-import {productAccessories} from './shop/productsStore';
 import ProductCard from "../components/shop/ProductCard";
 import './Shop.css';
+import { Fragment } from 'react';
+import ScrollButton from "../components/shop/ScrollButton";
+import { Content, Heading } from '../components/shop/Styles';
 
 const Shop = () => {
 
@@ -18,7 +20,7 @@ const Shop = () => {
                             <ul className="menu">
                                 <li className="menu_link">
                                     <a href="">
-                                        APPAREL
+                                        SHOP
                                     </a>
                                 </li>
                                 <li className="menu_link">
@@ -37,9 +39,9 @@ const Shop = () => {
                     </Container>
                 </div>
 
-                <section className={'apparel_section'}>
+                <section className={'shop_section'}>
                     <Container>
-                        <h1 align={'center'} className={'p-3'} >APPAREL</h1>
+                        <h1 align={'center'} className={'p-3'} >SHOP</h1>
                         <Row xs={1} md={3} className="g-4">
                             {productsArray.map(
                                 (product, idx) => (
@@ -53,21 +55,10 @@ const Shop = () => {
                     </Container>
                 </section>
 
-                <section className={'accessories_section'}>
-                    <Container>
-                        <h1 align={'center'} className={' p-3 accessories-h1'}>ACCESSORIES</h1>
-                        <Row xs={1} md={3} className={'g-4'}>
-                            {productAccessories.map(
-                                (product, idx) => (
-                                    <Col align={'center'} key={idx}>
-                                        <ProductCard product={product} />
-                                    </Col>
-                                )
-                            )}
-                        </Row>
-                    </Container>
-                    <button className={'view_all_button'}>VIEW ALL</button>
-                </section>
+                <Fragment>
+                    <Content />
+                    <ScrollButton />
+                </Fragment>
 
             </div>
         </>
