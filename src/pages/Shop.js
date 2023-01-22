@@ -9,7 +9,7 @@ import { Fragment } from 'react';
 import ScrollButton from "../components/shop/ScrollButton";
 import { Content, Heading } from '../components/shop/Styles';
 import { MDBFooter, MDBContainer } from 'mdb-react-ui-kit';
-
+import NavbarComponent from "../components/shop/Navbar";
 import image1 from '../assets/shop_img/telegram_about.png';
 import image2 from '../assets/shop_img/about_info/divider.png';
 import image3 from '../assets/shop_img/instagram/Instagram.png';
@@ -30,10 +30,12 @@ import sponsors4 from '../assets/shop_img/sponsors/Del Mar Strategy Logo.png';
 import sponsors5 from '../assets/shop_img/sponsors/Higher Fit Logo - Untitled Page.png';
 import sponsors6 from '../assets/shop_img/sponsors/For Sale Logo.png';
 
+
 const Shop = () => {
 
     return (
         <>
+            <NavbarComponent/>
             <div className={'shop'}>
                 {/*Hero*/}
                 <div className={'hero margin'}>

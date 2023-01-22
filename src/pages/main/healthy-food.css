@@ -1,0 +1,12 @@
+.general-info {
+    text-align: start;
+}
+
+.general-info h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.general-info small i {
+    text-align: center;
+}

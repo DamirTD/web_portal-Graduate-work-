@@ -1,0 +1,28 @@
+.footer-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 75px;
+    font-family: 'Mansalva', cursive;
+    cursor: pointer;
+}
+
+ul,li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.line-footer {
+    border-top: 1px solid #787A80;
+}
+
+h4 {
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    letter-spacing: -2px;
+    color: #212529;
+    font-family: 'ABeeZee-Regular',sans-serif;
+}
