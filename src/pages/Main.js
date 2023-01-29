@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {Button, Container, Navbar} from "react-bootstrap";
 import './Main.css';
 import image2 from '../assets/main_img/Image.png';

@@ -1,5 +1,19 @@
 .general-info {
+    display: flex;
+    flex-direction: column;
     text-align: start;
+    align-items: center;
+}
+
+.general-info a {
+    text-align: center;
+    margin-right: 250px;
+}
+
+.general-info a:hover {
+    background-color: white;
+    color: #E1C9A9;
+    border: 1px solid #E1C9A9;
 }
 
 .general-info h1 {
@@ -9,4 +23,108 @@
 
 .general-info small i {
     text-align: center;
+}
+
+.navigation-healthy-food {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-healthy-food h1 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.navigation-healthy-food a {
+    color: #212529;
+}
+
+.general-info a {
+        padding: 10px;
+        margin-top: 10px;
+        background: #E1C9A9;
+        width: 200px;
+        margin-left: 175px;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+}
+
+.youtube-videos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+}
+
+.youtube-videos-first, .youtube-videos-second {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+}
+
+.youtube-videos-first {
+    margin-bottom: 125px;
+}
+
+.youtube-channel {
+    display: flex;
+    flex-direction: column;
+}
+
+.youtube-channel a {
+    padding: 10px;
+    margin-top: 10px;
+    background: #E1C9A9;
+    width: 200px;
+    margin-left: 175px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.youtube-channel a:hover {
+    background-color: white;
+    color: #E1C9A9;
+    border: 1px solid #E1C9A9;
+}
+
+.calculators {
+    display: flex;
+    flex-direction: column;
+}
+
+.calc-card-button {
+    padding: 10px;
+    background: #E1C9A9;
+    width: 200px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-color: #E1C9A9;
+}
+
+.calc-card-button:hover {
+        background-color: white;
+        color: #E1C9A9;
+        border: 1px solid #E1C9A9;
+}
+
+.calculators h1{
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+}
+
+.calorie-calculators {
+    display: flex;
+}
+
+.calorie-calculators-card {
+    margin-right: 10rem;
+}
+
+.calorie-calculators-card img {
+    width: 15rem;
+    height: 15rem;
 }
